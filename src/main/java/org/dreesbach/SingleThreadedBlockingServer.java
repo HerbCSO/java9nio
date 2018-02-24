@@ -27,6 +27,9 @@ public class SingleThreadedBlockingServer {
                 out.write(transmogrify(data));
             }
         }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
         finally {
             System.out.println(String.format("Disconnected from socket [%s]", socket));
         }
