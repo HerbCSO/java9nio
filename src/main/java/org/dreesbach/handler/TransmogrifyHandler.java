@@ -16,6 +16,7 @@ public class TransmogrifyHandler implements Handler<Socket> {
         ) {
             int data;
             while ((data = in.read()) != -1) {
+                if (data == '%') throw new IOException("Oopsie");
                 out.write(Util.transmogrify(data));
             }
         }
