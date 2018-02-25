@@ -1,7 +1,7 @@
-package org.dreesbach.server;
+package org.dreesbach.server.classic;
 
-import org.dreesbach.handler.PrintingHandler;
-import org.dreesbach.handler.TransmogrifyHandler;
+import org.dreesbach.handler.classic.PrintingHandler;
+import org.dreesbach.handler.classic.TransmogrifyHandler;
 
 import java.io.IOException;
 import java.net.ServerSocket;

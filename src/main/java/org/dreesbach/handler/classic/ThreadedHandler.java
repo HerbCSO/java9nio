@@ -1,4 +1,6 @@
-package org.dreesbach.handler;
+package org.dreesbach.handler.classic;
+
+import org.dreesbach.handler.Handler;
 
 public class ThreadedHandler<S> extends UncheckedIOExceptionConverterHandler<S> {
 

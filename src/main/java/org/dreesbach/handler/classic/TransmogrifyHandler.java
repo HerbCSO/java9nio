@@ -1,5 +1,6 @@
-package org.dreesbach.handler;
+package org.dreesbach.handler.classic;
 
+import org.dreesbach.handler.Handler;
 import org.dreesbach.util.Util;
 
 import java.io.IOException;

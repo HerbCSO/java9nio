@@ -1,4 +1,7 @@
-package org.dreesbach.handler;
+package org.dreesbach.handler.classic;
+
+import org.dreesbach.handler.DecoratedHandler;
+import org.dreesbach.handler.Handler;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;
