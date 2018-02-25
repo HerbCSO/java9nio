@@ -21,7 +21,7 @@ public class TransmogrifyChannelHandler implements Handler<SocketChannel> {
             while (buf.hasRemaining()) {
                 socketChannel.write(buf);
             }
-            buf.compact(); // use compact() instead of reset() to ensure any leftover bits in the buffer go to the front
+//            buf.compact(); // use compact() instead of reset() to ensure any leftover bits in the buffer go to the front
         }
     }
 }
