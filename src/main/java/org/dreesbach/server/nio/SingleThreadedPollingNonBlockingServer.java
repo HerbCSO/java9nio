@@ -10,6 +10,9 @@ import java.nio.channels.SocketChannel;
 import java.util.ArrayList;
 import java.util.Collection;
 
+/**
+ * Very inefficient, do not use!
+ */
 public class SingleThreadedPollingNonBlockingServer {
     public static void main(String[] args) throws IOException {
         ServerSocketChannel ssc = ServerSocketChannel.open();

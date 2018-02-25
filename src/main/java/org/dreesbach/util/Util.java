@@ -8,6 +8,7 @@ public class Util {
     }
 
     public static void transmogrify(ByteBuffer buf) {
+        System.out.println("Transmogrification done by " + Thread.currentThread());
         // Before read, buf will have:
         // pos=0, limit=80, capacity=80
         // After read, it looks like this:
