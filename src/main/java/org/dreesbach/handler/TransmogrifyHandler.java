@@ -7,7 +7,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 
-public class TransmogrifyHandler<S> implements Handler<Socket> {
+public class TransmogrifyHandler implements Handler<Socket> {
     @Override
     public void handle(Socket socket) throws IOException {
         try (

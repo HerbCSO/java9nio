@@ -12,7 +12,7 @@ public class SingleThreadedBlockingServer {
         ServerSocket ss = new ServerSocket(8080);
         PrintingHandler<Socket> handler =
                 new PrintingHandler<>(
-                        new TransmogrifyHandler<>()
+                        new TransmogrifyHandler()
                 );
         while (true) {
             Socket socket = ss.accept(); // never null

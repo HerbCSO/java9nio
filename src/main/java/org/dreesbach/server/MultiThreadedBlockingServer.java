@@ -16,7 +16,7 @@ public class MultiThreadedBlockingServer {
                 new ThreadedHandler<>(
                         new UncheckedIOExceptionConverterHandler<>(
                                 new PrintingHandler<>(
-                                        new TransmogrifyHandler<>()
+                                        new TransmogrifyHandler()
                                 )
                         )
                 );

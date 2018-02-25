@@ -2,18 +2,16 @@ package org.dreesbach.handler;
 
 import java.io.IOException;
 
-public class PrintingHandler<S> implements Handler<S> {
-    private final Handler<S> other;
-
+public class PrintingHandler<S> extends DecoratedHandler<S> {
     public PrintingHandler(Handler<S> other) {
-        this.other = other;
+        super(other);
     }
 
     @Override
     public void handle(S s) throws IOException {
         System.out.println(String.format("Connected to [%s]", s));
         try {
-            other.handle(s);
+            super.handle(s);
         }
         finally {
             System.out.println(String.format("Disconnected from [%s]", s));
